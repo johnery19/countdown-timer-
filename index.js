@@ -25,3 +25,13 @@ const countdown = () => {
 }
 
 setInterval(countdown, 1000)
+
+const loadingSpinner = document.querySelector(".loading")
+const countdownDiv = document.querySelector(".countdown")
+
+countdownDiv.style.opacity = 0
+
+window.addEventListener("DOMContentLoaded", () => {
+  loadingSpinner.style.opacity = 0
+  countdownDiv.style.opacity = 1
+})
